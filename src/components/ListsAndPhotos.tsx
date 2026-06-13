@@ -106,7 +106,7 @@ export default function ListsAndPhotos() {
                        {/* Kuromi Skull Seal */}
                        <div className="flex items-center gap-1.5 opacity-70 group-hover:opacity-100 transition-opacity">
                           <Skull size={14} className="text-[#ff007f] drop-shadow-[0_0_5px_rgba(255,0,127,0.5)]" />
-                          <span className="text-[10px] text-[#ff007f] font-bold uppercase tracking-[0.2em]">Nossa Cara</span>
+                          <span className="text-[10px] text-[#ff007f] font-bold uppercase tracking-[0.2em]">Nota</span>
                        </div>
 
                        {/* Rating (Gold Birds / Stars) */}

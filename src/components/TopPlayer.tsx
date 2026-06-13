@@ -196,7 +196,7 @@ export default function TopPlayer() {
             Tocando da Playlist do YouTube
           </span>
           <h2 className="text-sm font-serif font-bold tracking-wide italic text-[#e6e0f8]">
-            Para o meu grande amor 🖤
+            Para minha Princessa 🖤
           </h2>
         </div>
         <button className="text-[#c5a059] hover:opacity-80 transition-opacity">
