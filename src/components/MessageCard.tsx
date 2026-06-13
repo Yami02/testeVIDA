@@ -20,7 +20,7 @@ export default function MessageCard() {
         </p>
         
         <p className="text-[#c5a059]/60 font-serif italic text-lg line-clamp-2 mb-6 select-none relative z-10">
-          Olha só 
+          Era oque eu queria falar mas....
         </p>
 
         <button 
@@ -56,7 +56,7 @@ export default function MessageCard() {
                 <Sparkles className="text-[#9b59b6] drop-shadow-[0_0_10px_rgba(155,89,182,0.8)]" size={36} />
               </div>
               
-              <h3 className="text-[#e6e0f8] font-serif font-bold text-2xl text-center mb-6 drop-shadow-md">Nossa História</h3>
+              <h3 className="text-[#e6e0f8] font-serif font-bold text-2xl text-center mb-6 drop-shadow-md">Feliz dia dos Namorados</h3>
               
               <p className="text-[#c5a059] leading-relaxed text-center font-medium italic border-l-2 border-r-2 border-[#c5a059]/20 px-4">
                 {siteData.terms.fullText}
