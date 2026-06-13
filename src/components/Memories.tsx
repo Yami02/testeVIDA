@@ -306,12 +306,12 @@ export default function Memories() {
                <div className="flex flex-col gap-3 relative z-10">
                  <div 
                    className="rounded-[2px] overflow-hidden h-28 border border-[#c5a059]/40 relative group/item cursor-pointer" 
-                   onClick={() => displayPhotos[0] && openGridPhoto(0)}
+                   onClick={() => displayPhotos[3] && openGridPhoto(3)}
                  >
-                    {displayPhotos[0] && (
+                    {displayPhotos[3] && (
                       <DriveImage 
-                        id={displayPhotos[0]} 
-                        alt="Memória 1" 
+                        id={displayPhotos[3]} 
+                        alt="Memória 4" 
                         className="w-full h-full object-cover mix-blend-luminosity opacity-80 group-hover/item:mix-blend-normal group-hover/item:opacity-100 group-hover/item:scale-105 transition-all duration-500" 
                       />
                     )}
@@ -344,12 +344,12 @@ export default function Memories() {
                  </div>
                  <div 
                    className="rounded-[2px] overflow-hidden h-28 border border-[#c5a059]/40 relative group/item cursor-pointer" 
-                   onClick={() => displayPhotos[3] && openGridPhoto(3)}
+                   onClick={() => displayPhotos[0] && openGridPhoto(0)}
                  >
-                    {displayPhotos[3] && (
+                    {displayPhotos[0] && (
                       <DriveImage 
-                        id={displayPhotos[3]} 
-                        alt="Memória 4" 
+                        id={displayPhotos[0]} 
+                        alt="Memória 1" 
                         className="w-full h-full object-cover mix-blend-luminosity opacity-80 group-hover/item:mix-blend-normal group-hover/item:opacity-100 group-hover/item:scale-105 transition-all duration-500" 
                       />
                     )}
