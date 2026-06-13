@@ -16,11 +16,11 @@ export default function MessageCard() {
         <h3 className="text-[#c5a059] font-medium text-xs tracking-[0.2em] uppercase mb-3 relative z-10">Mensagem especial</h3>
         
         <p className="text-[#f5e6d3] font-serif font-bold text-2xl leading-snug mb-3 relative z-10 drop-shadow-md">
-          E pensar que tudo começou do nada... <Sparkles className="inline w-5 h-5 text-[#9b59b6] drop-shadow-[0_0_5px_rgba(155,89,182,0.8)]" />
+          Queria falar coisas bonitas mas sempre que falo voce trava :(.<Sparkles className="inline w-5 h-5 text-[#9b59b6] drop-shadow-[0_0_5px_rgba(155,89,182,0.8)]" />
         </p>
         
         <p className="text-[#c5a059]/60 font-serif italic text-lg line-clamp-2 mb-6 select-none relative z-10">
-          Olha só pra gente agora: escrevendo nossa história...
+          Olha só 
         </p>
 
         <button 

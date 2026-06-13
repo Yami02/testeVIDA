@@ -93,7 +93,7 @@ export const siteData = {
   // 5. Termo final / Mensagem Especial
   terms: {
     title: "Mensagem especial",
-    previewText: "E pensar que tudo começou do nada... ✨ Olha só pra gente agora: escrevendo nossa...",
+    previewText: "Queria falar coisas bonitas mas sempre que falo voce trava :(.",
     fullText: "E pensar que tudo começou do nada... ✨ Olha só pra gente agora: escrevendo nossa própria história. Prometo te fazer sorrir todos os dias, voar com você como um passarinho livre, te encher de mimos dignos de uma Kuromi, e te amar incondicionalmente em todos os momentos e aventuras.",
     buttonText: "Mostrar Mensagem"
   },
