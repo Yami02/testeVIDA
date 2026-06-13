@@ -57,21 +57,28 @@ function KuromiJuntosButton({
   const [showBalloon, setShowBalloon] = useState(false);
 
   return (
-    <div
-      className="flex flex-col select-none flex-shrink-0 min-w-0"
-    >
-      <p className="text-[#c5a059] font-serif italic font-bold text-sm sm:text-base mb-2 text-right drop-shadow-md pr-2 shrink-0">
+    <div className="flex flex-col select-none w-full">
+      <p className="text-[#c5a059] font-serif italic font-bold text-sm sm:text-base mb-2 text-right drop-shadow-md pr-2">
         Nós Juntos
       </p>
 
-      <div className="relative flex justify-end items-center mt-2 px-1">
+      <div className="flex flex-col items-end px-1">
+        <img
+          src="https://media1.tenor.com/m/hdVDLbT1oW4AAAAC/kuromi-cute-kuromilove.gif"
+          alt="Kuromi"
+          title="Ver fotinhas 💜"
+          className="w-[120px] h-[120px] object-contain cursor-pointer transition-transform hover:scale-110 relative z-10 self-end"
+          onClick={() => setShowBalloon(prev => !prev)}
+          style={{ filter: 'drop-shadow(0 0 12px rgba(155,89,182,0.9))' }}
+        />
+
         <AnimatePresence>
           {showBalloon && (
             <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.8 }}
-              className="absolute right-0 bottom-[110%] sm:right-[110%] sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2 bg-[#1a0a2e] border-2 border-[#9b59b6] rounded-[16px] p-3 w-[180px] sm:w-[220px] max-w-[calc(100vw-40px)] sm:max-w-none cursor-pointer shadow-[0_0_15px_rgba(155,89,182,0.5)] z-30 origin-bottom-right sm:origin-right"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              className="relative mt-2 bg-[#1a0a2e] border-2 border-[#9b59b6] rounded-[16px] p-3 w-full max-w-full cursor-pointer shadow-[0_0_15px_rgba(155,89,182,0.5)] z-20 overflow-hidden"
               onClick={() => {
                 if (!loading && photos.length > 0) onClick();
                 setShowBalloon(false);
@@ -96,20 +103,11 @@ function KuromiJuntosButton({
                   </div>
                 ))}
               </div>
-              {/* Triangulo */}
-              <div className="absolute -bottom-1.5 right-4 sm:top-1/2 sm:-translate-y-1/2 sm:-right-1.5 sm:bottom-auto sm:-translate-x-0 w-3 h-3 bg-[#1a0a2e] border-b-2 border-r-2 sm:border-t-2 sm:border-r-2 sm:border-b-0 border-[#9b59b6] transform rotate-45" />
+              {/* Triangulo apontando para cima no canto direito */}
+              <div className="absolute -top-1.5 right-8 w-3 h-3 bg-[#1a0a2e] border-t-2 border-l-2 border-[#9b59b6] transform rotate-45" />
             </motion.div>
           )}
         </AnimatePresence>
-
-        <img
-          src="https://media1.tenor.com/m/hdVDLbT1oW4AAAAC/kuromi-cute-kuromilove.gif"
-          alt="Kuromi"
-          title="Ver fotinhas 💜"
-          className="w-[90px] h-[90px] sm:w-[120px] sm:h-[120px] object-contain cursor-pointer transition-transform hover:scale-110 relative z-10"
-          onClick={() => setShowBalloon(prev => !prev)}
-          style={{ filter: 'drop-shadow(0 0 12px rgba(155,89,182,0.9))' }}
-        />
       </div>
     </div>
   );
@@ -123,19 +121,28 @@ function MimikyuAleatoriosButton({
   const [showBalloon, setShowBalloon] = useState(false);
 
   return (
-    <div className="flex flex-col select-none flex-shrink-0 min-w-0">
-      <p className="text-[#c5a059] font-serif italic font-bold text-sm sm:text-base mb-2 text-left drop-shadow-md pl-2 shrink-0">
+    <div className="flex flex-col select-none w-full">
+      <p className="text-[#c5a059] font-serif italic font-bold text-sm sm:text-base mb-2 text-left drop-shadow-md pl-2">
         Fotos Aleatórias
       </p>
 
-      <div className="relative flex justify-start items-center mt-2 px-1">
+      <div className="flex flex-col items-start px-1">
+        <img
+          src="https://media1.tenor.com/m/xSVOM61BLDwAAAAC/mimikyu-mudae.gif"
+          alt="Mimikyu"
+          title="Ver fotinhas ✨"
+          className="w-[100px] h-[100px] object-contain cursor-pointer transition-transform hover:scale-110 relative z-10 self-start"
+          onClick={() => setShowBalloon(prev => !prev)}
+          style={{ filter: 'drop-shadow(0 0 12px rgba(197,160,89,0.9))' }}
+        />
+
         <AnimatePresence>
           {showBalloon && (
             <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.8 }}
-              className="absolute left-0 bottom-[110%] sm:left-[110%] sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2 bg-[#1a0a2e] border-2 border-[#c5a059] rounded-[16px] p-3 w-[180px] sm:w-[220px] max-w-[calc(100vw-40px)] sm:max-w-none cursor-pointer shadow-[0_0_15px_rgba(197,160,89,0.5)] z-30 origin-bottom-left sm:origin-left"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              className="relative mt-2 bg-[#1a0a2e] border-2 border-[#c5a059] rounded-[16px] p-3 w-full max-w-full cursor-pointer shadow-[0_0_15px_rgba(197,160,89,0.5)] z-20 overflow-hidden"
               onClick={() => {
                 if (!loading && photos.length > 0) onClick();
                 setShowBalloon(false);
@@ -160,20 +167,11 @@ function MimikyuAleatoriosButton({
                   </div>
                 ))}
               </div>
-              {/* Triangulo */}
-              <div className="absolute -bottom-1.5 left-4 sm:top-1/2 sm:-translate-y-1/2 sm:-left-1.5 sm:bottom-auto sm:-translate-x-0 w-3 h-3 bg-[#1a0a2e] border-b-2 border-r-2 sm:border-b-2 sm:border-l-2 sm:border-r-0 border-[#c5a059] transform rotate-45" />
+              {/* Triangulo apontando para cima no canto esquerdo */}
+              <div className="absolute -top-1.5 left-8 w-3 h-3 bg-[#1a0a2e] border-t-2 border-l-2 border-[#c5a059] transform rotate-45" />
             </motion.div>
           )}
         </AnimatePresence>
-
-        <img
-          src="https://media1.tenor.com/m/xSVOM61BLDwAAAAC/mimikyu-mudae.gif"
-          alt="Mimikyu"
-          title="Ver fotinhas ✨"
-          className="w-[90px] h-[90px] sm:w-[120px] sm:h-[120px] object-contain cursor-pointer transition-transform hover:scale-110 relative z-10"
-          onClick={() => setShowBalloon(prev => !prev)}
-          style={{ filter: 'drop-shadow(0 0 12px rgba(197,160,89,0.9))' }}
-        />
       </div>
     </div>
   );
@@ -342,7 +340,7 @@ export default function Memories() {
       </div>
 
       {/* Gallery Buttons */}
-      <div className="flex w-full relative z-10 items-end justify-between gap-1 px-1 mt-4">
+      <div className="flex flex-col gap-6 w-full relative z-10 mt-4">
         {/* Mimikyu Aleatorios Button */}
         <MimikyuAleatoriosButton
           photos={aleatoriosPhotos}

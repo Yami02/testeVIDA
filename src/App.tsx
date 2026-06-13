@@ -7,25 +7,29 @@ import ListsAndPhotos from './components/ListsAndPhotos';
 import { siteData } from './data';
 
 function FloatingHearts() {
-  const hearts = useMemo(() => {
-    return Array.from({ length: 12 }).map(() => ({
-      left: Math.random() * 90 + 5,
-      fontSize: Math.random() * 10 + 12,
-      duration: Math.random() * 8 + 6,
-      delay: Math.random() * 8,
-    }));
-  }, []);
+  const hearts = [
+    { left: '5%', fontSize: '16px', duration: '12s', delay: '0s' },
+    { left: '15%', fontSize: '20px', duration: '9s', delay: '4s' },
+    { left: '25%', fontSize: '14px', duration: '15s', delay: '1s' },
+    { left: '35%', fontSize: '18px', duration: '8s', delay: '7s' },
+    { left: '45%', fontSize: '15px', duration: '11s', delay: '2s' },
+    { left: '55%', fontSize: '19px', duration: '10s', delay: '6s' },
+    { left: '65%', fontSize: '14px', duration: '14s', delay: '3s' },
+    { left: '75%', fontSize: '17px', duration: '7s', delay: '8s' },
+    { left: '85%', fontSize: '15px', duration: '13s', delay: '5s' },
+    { left: '95%', fontSize: '20px', duration: '9s', delay: '2s' },
+  ];
 
   return (
     <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
       {hearts.map((props, i) => (
         <span
           key={i}
-          className="absolute bottom-[-20px] text-[#9b59b6] pointer-events-none"
+          className="fixed pointer-events-none select-none z-0 text-[#9b59b6]"
           style={{
-            left: `${props.left}%`,
-            fontSize: `${props.fontSize}px`,
-            animation: `floatUp ${props.duration}s ${props.delay}s infinite ease-in`,
+            left: props.left,
+            fontSize: props.fontSize,
+            animation: `floatUp ${props.duration} ${props.delay} infinite ease-in`,
           }}
         >
           💜
@@ -56,7 +60,7 @@ export default function App() {
           <div className="mb-6 pl-1">
             <h1 className="text-3xl font-serif font-bold text-[#e6e0f8] mb-1">{siteData.coupleName}</h1>
             <p className="text-[#c5a059] text-sm italic">
-              Juntos em trevas e luz desde {new Date(siteData.startDate).getFullYear()}
+              Juntos desde {new Date(siteData.startDate).getFullYear()}
             </p>
           </div>
 
